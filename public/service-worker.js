@@ -2,6 +2,7 @@ const FILES_TO_CACHE = [
     "/",
     "/index.html",
     "/assets/css/styles.css",
+    "/assets/js/index.js",
     "/manifest.webmanifest",
     "/assets/icons/icon-192x192.png",
     "/assets/icons/icon-512x512.png"
@@ -24,7 +25,7 @@ self.addEventListener("install", (e) => {
 
 self.addEventListener("activate", (e) => {
     e.waitUntil(
-        caches.keys().then(keylist => {
+        caches.keys().then(keyList => {
             return Promise.all(
                 keyList.map(key => {
                     if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
