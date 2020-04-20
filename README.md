@@ -1,16 +1,16 @@
-# budgetTracker
+# Budget Tracker
 
-# Online/Offline Budget Trackers
+## See it live: [Click here](https://dollar-watcher.herokuapp.com/)
 
 A budget tracking application with offline capability.
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they can populate the total when brought back online.
+A user can document expenses and deposits in their budget with or without a connection. During offline use, transaction data is temporarily stored with IndexDB and pushed to the main database when brought back online. 
 
 Offline Functionality:
 
-  * Enter deposits offline
+  * Enter deposits
 
-  * Enter expenses offline
+  * Enter expenses
 
 When brought back online:
 
